@@ -1,0 +1,266 @@
+.missingFilter {
+  border-color: #d49a8e !important;
+  color: #9a3e2b !important;
+}
+
+.missingFilter[data-active="true"] {
+  border-color: #9a3e2b !important;
+  background: #9a3e2b !important;
+  color: #fff !important;
+}
+
+.missingCard {
+  border-color: #d77f6c !important;
+}
+
+.missingCard > div:first-child {
+  background: #fff3ef;
+}
+
+.missingBadge {
+  padding: 5px 8px;
+  border-radius: 16px;
+  background: #f6d9d2;
+  color: #9a3e2b;
+  font-size: 10px;
+}
+
+.channelOnlyFilter {
+  border-color: #7892ae !important;
+  color: #365b7d !important;
+}
+
+.channelOnlyFilter[data-active="true"] {
+  border-color: #365b7d !important;
+  background: #365b7d !important;
+  color: #fff !important;
+}
+
+.onlyGuide {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  padding: 13px 15px;
+  border: 1px solid #cbd9e7;
+  border-radius: 11px;
+  background: #f1f7fb;
+}
+
+.onlyGuide strong,
+.onlyGuide span {
+  display: block;
+}
+
+.onlyGuide strong {
+  color: #274d70;
+  font-size: 12px;
+}
+
+.onlyGuide span {
+  flex: 1;
+  color: #617487;
+  font-size: 10px;
+}
+
+.onlyGuide a {
+  flex: 0 0 auto;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #365b7d;
+  color: #fff;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.onlyGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.onlyCard {
+  padding: 12px;
+  border: 1px solid #d6dde4;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.onlyCard > div {
+  grid-template-columns: 92px minmax(0, 1fr);
+}
+
+.onlyCard > div > button {
+  width: 92px;
+  height: 92px;
+}
+
+.onlyDeleteButton {
+  width: 100%;
+  min-height: 38px;
+  margin-top: 11px;
+  border: 1px solid #b52c25;
+  border-radius: 9px;
+  background: #a92d27;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.onlyDeleteButton:disabled {
+  border-color: #d6d9d3;
+  background: #eef0eb;
+  color: #92978f;
+  cursor: not-allowed;
+}
+
+.deletionBackdrop {
+  position: fixed;
+  z-index: 70;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(13, 22, 15, 0.85);
+}
+
+.deletionDialog {
+  width: min(480px, 100%);
+  padding: 28px;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+  text-align: center;
+}
+
+.warningIcon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: #fff0ec;
+  color: #a92d27;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.deletionDialog h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  letter-spacing: -0.04em;
+}
+
+.deletionDialog > p {
+  margin: 8px 0;
+  color: #626b60;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.deletionDialog > p strong {
+  color: #172116;
+}
+
+.deletionField {
+  display: grid;
+  gap: 9px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.deletionField span {
+  color: #4f574f;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.deletionField code {
+  padding: 10px 12px;
+  border-radius: 9px;
+  background: #fff0ec;
+  color: #9f3027;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.deletionField input {
+  min-height: 46px;
+  padding: 0 13px;
+  border: 1px solid #c9cec6;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.deletionField input[aria-invalid="true"] {
+  border-color: #b52c25;
+  background: #fff8f6;
+}
+
+.deletionError,
+.deletingNotice {
+  margin-top: 10px !important;
+  color: #a72e27 !important;
+  font-size: 12px !important;
+  font-weight: 800;
+}
+
+.deletingNotice {
+  color: #315d3d !important;
+}
+
+.deletionActions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin-top: 20px;
+}
+
+.deletionActions button {
+  min-height: 44px;
+  border: 1px solid #cdd2ca;
+  border-radius: 10px;
+  background: #fff;
+  color: #535d51;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.deletionActions button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.deletionActions .confirmDeleteButton {
+  border-color: #a92d27;
+  background: #a92d27;
+  color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .onlyGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .onlyGuide {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .onlyGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .onlyGrid {
+    grid-template-columns: 1fr;
+  }
+}

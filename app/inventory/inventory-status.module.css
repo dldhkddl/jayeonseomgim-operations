@@ -1,0 +1,146 @@
+.imageStatusOverlay {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.imageStatusOverlay[data-tone="soldout"] {
+  background: rgba(230, 232, 227, 0.66);
+  color: #4f554e;
+}
+
+.imageStatusOverlay[data-tone="suspended"] {
+  background: rgba(167, 46, 40, 0.72);
+  color: #fff;
+}
+
+.imageStatusOverlay strong {
+  padding: 9px 18px;
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.13);
+  font-size: clamp(18px, 2.2vw, 28px);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.imageStatusOverlay[data-tone="suspended"] strong {
+  background: rgba(143, 33, 30, 0.85);
+}
+
+.resumeButton {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid #4f7f5c;
+  border-radius: 10px;
+  background: #f0f8f1;
+  color: #285638;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.resumeButton:disabled {
+  border-color: #dfe1dc;
+  background: #f2f3ef;
+  color: #92978f;
+  cursor: not-allowed;
+}
+
+.resumeIcon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: #e6f3e8;
+  color: #2f6940;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.finalResumeButton {
+  border: 0;
+  background: #315d3d;
+  color: #fff;
+}
+
+.deleteButton {
+  width: 100%;
+  min-height: 42px;
+  margin-top: 8px;
+  border: 1px solid #b52c25;
+  border-radius: 10px;
+  background: #a92d27;
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.deleteButton:disabled {
+  border-color: #dfe1dc;
+  background: #f2f3ef;
+  color: #92978f;
+  cursor: not-allowed;
+}
+
+.deletionField {
+  display: grid;
+  gap: 9px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.deletionField span {
+  color: #4f574f;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.deletionField code {
+  padding: 10px 12px;
+  border-radius: 9px;
+  background: #fff0ec;
+  color: #9f3027;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.deletionField input {
+  min-height: 46px;
+  padding: 0 13px;
+  border: 1px solid #c9cec6;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.deletionField input[aria-invalid="true"] {
+  border-color: #b52c25;
+  background: #fff8f6;
+}
+
+.deletionError,
+.deletingNotice {
+  margin-top: 10px !important;
+  color: #a72e27 !important;
+  font-size: 12px !important;
+  font-weight: 800;
+}
+
+.deletingNotice {
+  color: #315d3d !important;
+}
+
+.deletionActions {
+  display: block !important;
+}
+
+.deletionActions button {
+  width: 100%;
+}
